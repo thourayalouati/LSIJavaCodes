@@ -8,6 +8,7 @@ public class TableauStatique {
         for (int i = 0; i < 5; i++) {
             tableau[i] = i + 1;
         }
+        System.out.println("Taille du tableau " + tableau.length);
 
         System.out.println("Contenu du tableau avec For(Type:int) : ");
         for(int x:tableau)
