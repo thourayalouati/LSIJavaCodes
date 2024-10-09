@@ -8,7 +8,9 @@ public class TableauComparaison {
         int[] b = {1, 2, 3};
 
         // Comparaison des tableaux
-        if (a == null || b == null || a.length != b.length) {
+        if (a == b) {
+            System.out.println("Les tableaux sont identiques (même référence)");
+        } else if (a == null || b == null || a.length != b.length) {
             System.out.println("contenus différents ou nuls");
         } else {
             int i = 0;
@@ -23,4 +25,5 @@ public class TableauComparaison {
         }
     }
 }
+
 
