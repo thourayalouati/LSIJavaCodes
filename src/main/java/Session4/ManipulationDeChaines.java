@@ -1,7 +1,10 @@
 package Session4;
 
+import java.util.Scanner;
+
 public class ManipulationDeChaines {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
         String s1 = "Hello";
         String s2 = "Hello";
@@ -14,10 +17,6 @@ public class ManipulationDeChaines {
         } else {
             System.out.println("s1 et s2 font référence à des objets différents !");
         }
-
-
-
-
 
         // Chaîne de départ
         String chaine = "Bonjour, comment ça va ?";
@@ -35,5 +34,19 @@ public class ManipulationDeChaines {
         // Utilisation de charAt pour obtenir un caractère à une position donnée
         char caractere = chaine.charAt(0); // Le premier caractère, 'B'
         System.out.println("Premier caractère : " + caractere);
+
+        // Lecture d'un caractère à partir du clavier
+        System.out.print("Entrez un caractère : ");
+        char inputChar = scanner.next().charAt(0); // Lire le premier caractère de l'entrée utilisateur
+        System.out.println("Vous avez entré le caractère : " + inputChar);
+
+        // Exemple d'utilisation du caractère lu
+        if (inputChar == 'a') {
+            System.out.println("Le caractère est 'a'.");
+        } else {
+            System.out.println("Le caractère n'est pas 'a'.");
+        }
+
+        scanner.close();
     }
 }
