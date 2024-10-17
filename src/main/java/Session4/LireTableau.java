@@ -16,7 +16,7 @@ public class LireTableau {
 
         // Lire les éléments du tableau à partir du clavier
         for (int i = 0; i < tab.length; ++i) {
-            System.out.print("Entrez l'élément " + i + " : ");
+            System.out.println("Entrez l'élément " + i + " : ");
             tab[i] = scanner.nextDouble();
         }
 
