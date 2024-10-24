@@ -2,7 +2,7 @@ package POO;
 
 import java.util.Objects;
 
-class Rectangle {
+public class Rectangle {
     // déclaration des attributs
     private double hauteur;
     private double largeur;
@@ -15,11 +15,11 @@ class Rectangle {
     }
     public Rectangle()
     {
-      this(4,5);
+        this(4,5);
 
     }
     //Constructeur avec paramètres
-   public Rectangle(int hauteur)
+    public Rectangle(int hauteur)
     {
         this.hauteur=hauteur;
         largeur=0;
@@ -33,6 +33,10 @@ class Rectangle {
     }
     public double surface()
     { return hauteur * largeur; }
+
+    public double perimetre()
+    {return ((largeur+hauteur)*2);
+    }
     public double getHauteur() { return hauteur; }
     public double getLargeur() { return largeur; }
     public void setHauteur(double h)
@@ -53,7 +57,9 @@ class Rectangle {
         return Double.compare(rectangle.hauteur, hauteur) == 0 && Double.compare(rectangle.largeur, largeur) == 0;
     }
 
-
-
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(hauteur, largeur);
+    }
 }
+
