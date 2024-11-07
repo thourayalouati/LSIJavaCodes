@@ -1,5 +1,7 @@
 package Heritage;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Position position = new Position(2.0, 3.0); // Créez une position avec des coordonnées x et y
@@ -11,6 +13,16 @@ public class Main {
 
 
         FigureGeometrique f=new FigureGeometrique("a",position);
-        System.out.println(f.nom);
+        System.out.println(f.getNom());
+
+        ArrayList<FigureGeometrique> figures=new ArrayList<>();
+        figures.add(new Rectangle(2,3,position));
+        figures.add(new Cercle("cercle",position));
+
+        //Résolution dynamique
+        for(int i=0;i<figures.size();i++)
+        {  System.out.println(figures.get(i).getNom());
+        System.out.println(figures.get(i).surface());}
+
     }
 }
