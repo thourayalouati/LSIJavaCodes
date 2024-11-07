@@ -4,11 +4,21 @@ public class Rectangle extends FigureGeometrique {
     private double longueur;
     private double largeur;
 
+    public Rectangle(String nom, Position position, double longueur, double largeur) {
+        super(nom, position);
+        this.longueur = longueur;
+        this.largeur = largeur;
+    }
+
     public Rectangle(double longueur, double largeur, Position position) {
         super("Rectangle", position);
         this.longueur = longueur;
         this.largeur = largeur;
 
+    }
+
+    public Rectangle(int taille, int taille1) {
+        super();
     }
 
     @Override

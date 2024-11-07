@@ -10,6 +10,10 @@ public class  FigureGeometrique {
         this.position = position;
     }
 
+    public FigureGeometrique() {
+
+    }
+
     public double aire() {
         System.out.println(nom);
         return 0.0;
