@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Rectangle {
     // déclaration des attributs
-    private double hauteur;
-    private double largeur;
+ private double hauteur;
+ private double largeur;
     // définition des méthodes
 
     public Rectangle(double hauteur, double  largeur)

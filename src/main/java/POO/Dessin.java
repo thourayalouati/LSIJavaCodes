@@ -5,7 +5,7 @@ import org.w3c.dom.css.Rect;
 public class Dessin{
         public static void main (String[] args)
         {
-            Rectangle r=new Rectangle();
+            Rectangle r=new Rectangle(); //4 5
             System.out.println(r);
             System.out.println("hauteur " + r.getHauteur());
             System.out.println(r.getHauteur());
@@ -26,9 +26,16 @@ public class Dessin{
                 System.out.println("r1 != r2 côté mémoire");
             System.out.println("Comparasion avec equals " + r1.equals(r2));
 
+
             /****************************************************************/
 
             Rectangle r3=null;
+
+            /********************************************************************/
+            Rectangle r6=new Rectangle(7,8);
+            System.out.println(r6);
+            System.out.println(new Rectangle(8,9));
+            System.out.println(r6.toSring());
 
         }
     }

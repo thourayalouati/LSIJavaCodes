@@ -2,8 +2,7 @@ package Heritage;
 
 public class Personnage {
 
-
-    private String nom;
+    protected String nom;
     private int energie;
     private int dureeVie;
 
