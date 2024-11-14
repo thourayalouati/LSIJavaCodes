@@ -15,6 +15,7 @@ public class Main {
         FigureGeometrique f=new FigureGeometrique("a",position);
         System.out.println(f.getNom());
 
+        //Type apprenté
         ArrayList<FigureGeometrique> figures=new ArrayList<>();
         figures.add(new Rectangle(2,3,position));
         figures.add(new Cercle("cercle",position));
